@@ -1,0 +1,14 @@
+Notes:
+
+1) My local doesn't have a GPU, the udacity g2 instance does, but still throws the no GPU error. Floyd hub never sent me a confirmation email so I wasn't able to to use floyd.
+
+So I ran this on my local machine (Dell Insprion 14, core 15 5000 series, an octacore cpu (4 dual core cpu's) with 16G of ram)
+
+
+2) I tried a few hyperparameter settings. My first attempt ran training in less than 30 minutes without gpu's and achieved a loss of 0.1. It did an admirable job of getting the basic script outline down, specifically: starting each characters line with thecharacters name and ending most sentences with a sentence ender ( period, question mark etc..) but didn't really learn parenthesis and quotation marks well, with a lot of closing parens without opening oparens and closing quotes without opening quotes.
+
+My last attempt I signicantly increased the hyperparmeters and as a result it took much longer to train (approx 4 hours). It performed a bit better getting most instances of parenthesis correct (open parens followed by text followed by close parens) but still didn't get quotation marks correctly and still didn't get parens 100%, but still better than the simpler model.
+
+However, the compute times vs improvements were not worth it, in my opinion. 
+
+It will be interesting to try both models on the larger dataset to see which one learns better with a lot of data.
